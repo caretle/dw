@@ -1,0 +1,26 @@
+<!DOCTYPE html  >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>利用html5导入图片</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="800" height="600" style="border:1px solid #c3c3c3;">
+  
+    </canvas>
+    <script type="text/javascript">
+      var c=document.getElementById("myCanvas");
+      var cxt=c.getContext("2d");
+      var img=new Image();
+      img.src="flower.png";
+      img.onload = function () //确保图片已经加载完毕  
+{  
+   cxt.drawImage(img,0,0); 
+   cxt.drawImage(img,200,100,100,50);
+   cxt.drawImage(img,350,150,400,300); 
+}  
+	 
+    </script>
+</body>
+</html>

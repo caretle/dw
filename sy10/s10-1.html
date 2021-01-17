@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>算累加和</title>
+</head>
+<script language="javascript">
+
+function js(){
+	var i,n,sum=0;
+	n=this.document.ljh.rys.value;
+for(i=0;i<=n;i++)
+sum=sum+i;
+this.document.ljh.jg.value=sum;}
+function qk(){
+	this.document.ljh.rys.value="";
+	this.document.ljh.jg.value="";
+}
+</script>
+
+
+<body>
+<form id="form1" name="ljh" method="post" action="">
+  <p>计算1到任意数之和：
+</p>
+  <p>输入任意数：
+    <label for="textfield"></label>
+    <input type="text" name="rys" id="rys" />
+  </p>
+  <p>得出结果为：
+    <label for="textfield2"></label>
+    <input type="text" name="jg" id="jg" />
+  </p>
+  <p>
+    <input type="button" name="button" id="button" value="计算" onclick="js()"/>
+    <input type="button" name="button2" id="button2" value="清空" onclick="qk()"/>
+  </p>
+</form>
+</body>
+</html>
